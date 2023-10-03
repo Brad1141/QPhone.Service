@@ -7,5 +7,10 @@ namespace QPhone.Service.Context
 	{
 		private readonly string connectionString;
 		public DbSet<Event> Event { get; set; }
+
+		public QPhoneContext(string connectionString)
+		{
+			this.connectionString = connectionString;
+		}
 	}
 }
